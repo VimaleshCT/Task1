@@ -260,7 +260,7 @@ import Sidebar from "../Componenets/Sidebar/Sidebar";
 import { PieChart, Pie, Tooltip } from "recharts";
 import "./Dashboard.css";
 
-const Home = () => {
+const Dashboard = () => {
   const [studentData] = useState(Record);
   const [selectedRegisterNumber, setSelectedRegisterNumber] = useState("");
   const [selectedSubjectCode, setSelectedSubjectCode] = useState("");
@@ -409,4 +409,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Dashboard;
