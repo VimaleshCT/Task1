@@ -1,0 +1,186 @@
+[
+  {
+    "register_number": "2021239025",
+    "password": "9025",
+    "semester": "1",
+    "course_code": "XC5001",
+    "grade": "A",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239026",
+    "password": "9026",
+    "semester": "1",
+    "course_code": "XC5001",
+    "grade": "B",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239027",
+    "password": "9027",
+    "semester": "1",
+    "course_code": "XC5001",
+    "grade": "O",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239028",
+    "password": "9028",
+    "semester": "1",
+    "course_code": "XC5001",
+    "grade": "A",
+    "credits": 4
+  },
+
+  {
+    "register_number": "2021239025",
+    "semester": "1",
+    "course_code": "XC5002",
+    "grade": "A",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239026",
+    "semester": "1",
+    "course_code": "XC5002",
+    "grade": "O",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239027",
+    "semester": "1",
+    "course_code": "XC5002",
+    "grade": "A",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239028",
+    "semester": "1",
+    "course_code": "XC5002",
+    "grade": "B",
+    "credits": 4
+  },
+
+  {
+    "register_number": "2021239025",
+    "semester": "1",
+    "course_code": "XC5003",
+    "grade": "O",
+    "credits": 3
+  },
+  {
+    "register_number": "2021239026",
+    "semester": "1",
+    "course_code": "XC5003",
+    "grade": "A",
+    "credits": 3
+  },
+  {
+    "register_number": "2021239027",
+    "semester": "1",
+    "course_code": "XC5003",
+    "grade": "B",
+    "credits": 3
+  },
+  {
+    "register_number": "2021239028",
+    "semester": "1",
+    "course_code": "XC5003",
+    "grade": "O",
+    "credits": 3
+  },
+
+  {
+    "register_number": "2021239025",
+    "semester": "2",
+    "course_code": "XC5104",
+    "grade": "O",
+    "credits": 2
+  },
+  {
+    "register_number": "2021239026",
+    "semester": "2",
+    "course_code": "XC5104",
+    "grade": "O",
+    "credits": 2
+  },
+  {
+    "register_number": "2021239027",
+    "semester": "2",
+    "course_code": "XC5104",
+    "grade": "O",
+    "credits": 2
+  },
+  {
+    "register_number": "2021239028",
+    "semester": "2",
+    "course_code": "XC5104",
+    "grade": "B",
+    "credits": 2
+  },
+
+  {
+    "register_number": "2021239025",
+    "semester": "3",
+    "course_code": "XC5105",
+    "grade": "B",
+    "credits": 1
+  },
+  {
+    "register_number": "2021239026",
+    "semester": "3",
+    "course_code": "XC5105",
+    "grade": "B",
+    "credits": 1
+  },
+  {
+    "register_number": "2021239027",
+    "semester": "3",
+    "course_code": "XC5105",
+    "grade": "B",
+    "credits": 1
+  },
+  {
+    "register_number": "2021239028",
+    "semester": "3",
+    "course_code": "XC5105",
+    "grade": "B",
+    "credits": 1
+  },
+
+  {
+    "register_number": "2021239025",
+    "semester": "6",
+    "course_code": "XC5859",
+    "grade": "A",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239026",
+    "semester": "6",
+    "course_code": "XC5859",
+    "grade": "A",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239027",
+    "semester": "6",
+    "course_code": "XC5859",
+    "grade": "B",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239028",
+    "semester": "6",
+    "course_code": "XC5859",
+    "grade": "B",
+    "credits": 4
+  },
+  {
+    "register_number": "2021239029",
+    "semester": "6",
+    "course_code": "XC5859",
+    "grade": "O",
+    "credits": 4
+  }
+]
