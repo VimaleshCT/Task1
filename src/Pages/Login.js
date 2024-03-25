@@ -66,7 +66,7 @@ const Login = () => {
         student.password === password
     );
     if (student) {
-      navigate(`/dashboard/${student.register_number}`);
+      navigate("/");
     } else {
       alert("Invalid register number or password");
     }

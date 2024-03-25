@@ -6,7 +6,7 @@ const SelectStudent = ({
   handleSelectChange,
   selectedSubjectCode,
   handleSubjectCodeChange,
-  selectedSemester, // Move selectedSemester here
+  selectedSemester,
   handleSemesterChange,
 }) => {
   const uniqueSemesters = [
