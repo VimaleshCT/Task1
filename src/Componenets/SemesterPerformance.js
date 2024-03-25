@@ -103,13 +103,17 @@ import { Chart, registerables } from "chart.js/auto";
 // Register Chart.js components
 Chart.register(...registerables);
 
-const SemesterPerformanceChart = ({ students }) => {
+const SemesterPerformanceChart = ({
+  students,
+  selectedRegisterNumber,
+  selectedSemester,
+}) => {
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [],
   });
 
-  // Define chartOptions here
+  // Define chartOptions here, similar to the original code
   const chartOptions = {
     scales: {
       y: {
@@ -136,62 +140,48 @@ const SemesterPerformanceChart = ({ students }) => {
       },
       title: {
         display: true,
-        text: "Semester Performance",
+        text: "Semester Performance (Comparison)",
       },
     },
     maintainAspectRatio: false,
   };
 
   useEffect(() => {
-    // Group students by register number
-    const groupedStudents = students.reduce((groups, student) => {
-      if (!groups[student.register_number]) {
-        groups[student.register_number] = {};
+    // Group students by register number, considering selectedRegisterNumber
+    const filteredStudents = students.filter(
+      (student) =>
+        !selectedRegisterNumber ||
+        student.register_number === selectedRegisterNumber
+    );
+    const groupedStudents = filteredStudents.reduce((groups, student) => {
+      if (!groups[student.semester]) {
+        groups[student.semester] = { credits: 0 };
       }
-      if (!groups[student.register_number][student.semester]) {
-        groups[student.register_number][student.semester] = 0;
-      }
-      groups[student.register_number][student.semester] += student.credits;
+      groups[student.semester].credits += student.credits;
       return groups;
     }, {});
 
     // Prepare data for chart
-    const labels = Array.from(
-      new Set(students.map((student) => `Semester ${student.semester}`))
-    );
+    const labels = Object.keys(groupedStudents).sort(); // Ensure semesters are sorted
 
-    const colors = [
-      "#00B3E6",
-      "#E6B333",
-      "#3366E6",
-      "#999966",
-      "#99FF99",
-      "#B34D4D",
-    ];
-
-    const datasets = Object.keys(groupedStudents).map(
-      (registerNumber, index) => ({
-        label: `Register Number ${registerNumber}`,
-        data: labels.map(
-          (label) =>
-            groupedStudents[registerNumber][parseInt(label.split(" ")[1])] || 0
-        ),
-        fill: false,
-        borderColor: colors[index % colors.length],
-        backgroundColor: colors[index % colors.length], // Optional: fill color
-      })
-    );
+    const datasets = labels.map((semester) => ({
+      label: `Semester ${semester}`,
+      data: [groupedStudents[semester].credits],
+      fill: false,
+      borderColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Generate random colors
+      backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`, // Optional: fill color (same as border)
+    }));
 
     // Update chartData state
     setChartData({
       labels: labels,
       datasets: datasets,
     });
-  }, [students]);
+  }, [students, selectedRegisterNumber, selectedSemester]);
 
   return (
     <div style={{ height: "400px", width: "100%" }}>
-      <h2>Semester Performance</h2>
+      <h2>Semester Performance (Comparison)</h2>
       <Line data={chartData} options={chartOptions} />
     </div>
   );

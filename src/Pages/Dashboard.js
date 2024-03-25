@@ -320,77 +320,77 @@ const Dashboard = () => {
           openSidebarToggle={opensidebarToggle}
           openSidebar={openSidebar}
         />
-      </div>
-      <div className="main-cards">
-        <div className="card">
-          <div className="card-inner">
-            <h3>Semester</h3>
-            <BsBook className="card-icon" />
-          </div>
-          <h1>{selectedSemester}</h1>
-        </div>
-        <div className="card">
-          <div className="card-inner">
-            <h3>Student</h3>
-            <BsGraphUpArrow className="card-icon" />
-          </div>
-          <h1>{selectedRegisterNumber}</h1>
-        </div>
-        <div className="card">
-          <div className="card-inner">
-            <h3>Subject</h3>
-            <BsNewspaper className="card-icon" />
-          </div>
-          <h1>{selectedSubjectCode}</h1>
-        </div>
-      </div>
-      <div className="compare">
-        <div className="">
-          {selectedSemester && (
-            <div className="charts">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart width={150} height={40} data={Record}>
-                  <Bar dataKey="Credits" fill="#8884d8" />
-                </BarChart>
-              </ResponsiveContainer>
+        <div class="outer-box">
+          <div className="main-cards">
+            <div className="card">
+              <div className="card-inner">
+                <h3>Semester</h3>
+                <BsBook className="card-icon" />
+              </div>
+              <h1>{selectedSemester}</h1>
             </div>
-          )}
-          <h1>Student Dashboard</h1>
-          <SelectStudent
-            students={studentData}
-            selectedRegisterNumber={selectedRegisterNumber}
-            handleSelectChange={handleSelectChange}
-            selectedSubjectCode={selectedSubjectCode}
-            handleSubjectCodeChange={handleSubjectCodeChange}
-            selectedSemester={selectedSemester}
-            handleSemesterChange={handleSemesterChange}
-          />
-          {/* <StudentList students={studentData} /> */}
-          <GradeChart
-            students={studentData}
-            selectedRegisterNumber={selectedRegisterNumber}
-            selectedSubjectCode={selectedSubjectCode}
-          />
-          <SemesterPerformanceChart
-            students={studentData}
-            selectedRegisterNumber={selectedRegisterNumber}
-            selectedSemester={selectedSemester}
-          />
-          <div className="charts">
-            <h1>Grade Comparison</h1>
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart width={400} height={400}>
-                <Pie
-                  dataKey="value"
-                  isAnimationActive={false}
-                  data={gradeChartData}
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={80}
-                  fill="#8884d8"
-                  label
-                />
-                {/* <Pie
+            <div className="card">
+              <div className="card-inner">
+                <h3>Student</h3>
+                <BsGraphUpArrow className="card-icon" />
+              </div>
+              <h1>{selectedRegisterNumber}</h1>
+            </div>
+            <div className="card">
+              <div className="card-inner">
+                <h3>Subject</h3>
+                <BsNewspaper className="card-icon" />
+              </div>
+              <h1>{selectedSubjectCode}</h1>
+            </div>
+          </div>
+          <div className="compare">
+            <div className="">
+              {/* {selectedSemester && (
+                <div className="charts">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart width={150} height={40} data={Record}>
+                      <Bar dataKey="Credits" fill="#8884d8" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+              )} */}
+              <h1>Student Dashboard</h1>
+              <SelectStudent
+                students={studentData}
+                selectedRegisterNumber={selectedRegisterNumber}
+                handleSelectChange={handleSelectChange}
+                selectedSubjectCode={selectedSubjectCode}
+                handleSubjectCodeChange={handleSubjectCodeChange}
+                selectedSemester={selectedSemester}
+                handleSemesterChange={handleSemesterChange}
+              />
+              {/* <StudentList students={studentData} /> */}
+              <GradeChart
+                students={studentData}
+                selectedRegisterNumber={selectedRegisterNumber}
+                selectedSubjectCode={selectedSubjectCode}
+              />
+              <SemesterPerformanceChart
+                students={studentData}
+                selectedRegisterNumber={selectedRegisterNumber}
+                selectedSemester={selectedSemester}
+              />
+              <div className="charts">
+                <h1>Grade Comparison</h1>
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart width={400} height={400}>
+                    <Pie
+                      dataKey="value"
+                      isAnimationActive={false}
+                      data={gradeChartData}
+                      cx="50%"
+                      cy="50%"
+                      outerRadius={80}
+                      fill="#8884d8"
+                      label
+                    />
+                    {/* <Pie
                   dataKey="value"
                   data={gradeChartData}
                   cx={500}
@@ -399,9 +399,11 @@ const Dashboard = () => {
                   outerRadius={80}
                   fill="#82ca9d"
                 /> */}
-                <Tooltip />
-              </PieChart>
-            </ResponsiveContainer>
+                    <Tooltip />
+                  </PieChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
           </div>
         </div>
       </div>
