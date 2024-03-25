@@ -81,7 +81,13 @@ const SemesterPerformanceChart = ({
 
   return (
     <div style={{ height: "400px", width: "100%" }}>
-      <h2>Semester Performance (Comparison)</h2>
+      <h2
+        style={{
+          color: "aliceblue",
+        }}
+      >
+        Semester Performance (Comparison)
+      </h2>
       <Bar data={chartData} options={chartOptions} />
     </div>
   );

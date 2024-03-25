@@ -2,11 +2,10 @@
   grid-area: main;
   /* overflow-y: auto; */
   padding: 20px 20px;
-  margin-top: 10px;
   top: 20rem;
   bottom: 20rem;
   width: 80vw;
-  color: #1d2634;
+  background-color: #232d3f;
 }
 
 .main-title {
@@ -40,26 +39,20 @@
   width: 100%;
   bottom: 10px;
   position: relative;
-  /* top: 100px;
-  left: 50px; */
 }
 
 .select {
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #365486;
-  width: 70%;
-  max-width: 400px;
+  width: 20%;
   height: 50%;
   padding: 20px;
   border-radius: 10px;
+  font-size: medium;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .card {
@@ -119,8 +112,7 @@
     margin-top: 30px;
   }
 }
-
-/* .Charts {
-  margin-left: 40px;
-  position: absolute;
-} */
+h1,
+h3 {
+  color: aliceblue;
+}

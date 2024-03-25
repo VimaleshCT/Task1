@@ -10,7 +10,11 @@ const Layout = () => {
       <Header />
       <div className="side">
         <Sidebar />
-        <div>
+        <div
+          style={{
+            backgroundColor: "#232D3F",
+          }}
+        >
           <Outlet />
         </div>
       </div>
