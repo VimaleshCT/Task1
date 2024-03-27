@@ -42,7 +42,7 @@ const SemesterPerformanceChart = ({
       },
       title: {
         display: true,
-        text: "Semester Performance (Comparison)",
+        text: "Semester Performance (Credits Comparison)",
       },
     },
     maintainAspectRatio: false,
