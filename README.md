@@ -13,7 +13,7 @@
 ### `npm start`
 
 Runs the app that i have deployed.\
-Open [[https://task1-dashboard.vercel.app/](https://task1-dashboard.vercel.app/) to view it in your browser.
+Open [https://task1-dashboard.vercel.app/](https://task1-dashboard.vercel.app/) to view it in your browser.
 
 ## Usage
 1.Select a student register number to view their performance metrics.<br>
