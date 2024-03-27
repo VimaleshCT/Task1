@@ -1,6 +1,6 @@
 
                                                  
-                                                     Student Dashboard Project 
+                                         Student Dashboard Project 
 
 **This project is a student dashboard application built with React.js that allows users to visualize and compare student performance data across different semesters and subjects.**
 
