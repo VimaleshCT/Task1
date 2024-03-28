@@ -1,6 +1,4 @@
-
-                                                 
-                                         Student Dashboard Project 
+# **Student Dashboard Project**
 
 **This project is a student dashboard application built with React.js that allows users to visualize and compare student performance data across different semesters and subjects.**
 
@@ -10,7 +8,28 @@
 🎯Compare semester-wise performance using bar charts.
 
 
-### `npm start`
+## Cloning and Running the Application in local
+
+Clone the project into local :
+
+```bash
+git clone https://github.com/VimaleshCT/Task1.git
+````
+
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+
+```bash
+npm install
+```
+
+In order to run the application Type the following command
+
+```bash
+npm start
+```
+
+The Application Runs on **localhost:3000**
+
 
 Runs the app that i have deployed.\
 Open [https://task1-dashboard.vercel.app/](https://task1-dashboard.vercel.app/) to view it in your browser.
